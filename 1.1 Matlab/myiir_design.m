@@ -13,7 +13,7 @@ f_sampling = 10000; % 10kHz
 f_nyq = f_sampling/2; %% Nyquist frequenc
 f0 = f_cut_off/f_nyq; %% Normalized cut-off frequency
 
-[b,a]=butter(N, f0) %% get filter coefficients
+[b,a]=butter(N, f0); %% get filter coefficients
 [h1, w1]=freqz(b,a); %% %% get the transfer function of the designed filter
 
 bi=floor(b*2^(nb-1)); %% convert b coefficients into nb-bit integers

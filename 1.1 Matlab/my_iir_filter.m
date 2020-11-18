@@ -41,11 +41,6 @@ yq=floor(y*2^(nb-1));
 idy=find(yq==2^(nb-1));
 yq(idy)=2^(nb-1)-1;
 
-figure
-plot(xq);
-hold on
-plot(yq);
-
 %% save input and output
 fp=fopen('samples.txt','w');
 fprintf(fp,'%d\n', xq);
@@ -54,12 +49,12 @@ fclose(fp);
 fp=fopen('resultsm.txt', 'w');
 fprintf(fp, '%d\n', yq);
 fclose(fp);
+
+
+
+%fp=fopen('resultsc6.txt', 'r');
+%yq_c = fscanf(fp,'%d');
+%fclose(fp);
+
 iir_thdq = thd (yq)
-
-
-% fp=fopen('resultsc.txt', 'r');
-% yq_c = fscanf(fp,'%d');
-% fclose(fp);
-% 
-% 
-% iir_C = thd(yq_c)
+%iir_C = thd(yq_c)
