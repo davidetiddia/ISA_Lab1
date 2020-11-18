@@ -1,0 +1,123 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : filter
+Version: O-2018.06-SP4
+Date   : Tue Nov 17 10:46:12 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: a1[1] (input port clocked by MY_CLK)
+  Endpoint: output_reg/regx_13/Q_reg
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  filter             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  a1[1] (in)                                              0.00       0.50 f
+  myfilter_iir/a1[1] (iir)                                0.00       0.50 f
+  myfilter_iir/mult_47/b[1] (iir_DW_mult_tc_0)            0.00       0.50 f
+  myfilter_iir/mult_47/U479/ZN (INV_X1)                   0.12       0.62 r
+  myfilter_iir/mult_47/U445/Z (XOR2_X2)                   0.20       0.82 r
+  myfilter_iir/mult_47/U732/ZN (NAND2_X1)                 0.14       0.96 f
+  myfilter_iir/mult_47/U537/ZN (OAI22_X1)                 0.08       1.04 r
+  myfilter_iir/mult_47/U142/S (FA_X1)                     0.12       1.17 f
+  myfilter_iir/mult_47/U499/ZN (AOI222_X1)                0.13       1.29 r
+  myfilter_iir/mult_47/U498/ZN (OAI222_X1)                0.07       1.36 f
+  myfilter_iir/mult_47/U497/ZN (AOI222_X1)                0.11       1.47 r
+  myfilter_iir/mult_47/U496/ZN (OAI222_X1)                0.07       1.54 f
+  myfilter_iir/mult_47/U495/ZN (AOI222_X1)                0.10       1.64 r
+  myfilter_iir/mult_47/U453/ZN (INV_X1)                   0.03       1.67 f
+  myfilter_iir/mult_47/U494/ZN (AOI222_X1)                0.09       1.76 r
+  myfilter_iir/mult_47/U452/ZN (INV_X1)                   0.03       1.79 f
+  myfilter_iir/mult_47/U493/ZN (AOI222_X1)                0.09       1.88 r
+  myfilter_iir/mult_47/U447/ZN (INV_X1)                   0.03       1.91 f
+  myfilter_iir/mult_47/U492/ZN (AOI222_X1)                0.09       2.00 r
+  myfilter_iir/mult_47/U446/ZN (INV_X1)                   0.03       2.03 f
+  myfilter_iir/mult_47/U491/ZN (AOI222_X1)                0.09       2.12 r
+  myfilter_iir/mult_47/U450/ZN (INV_X1)                   0.03       2.15 f
+  myfilter_iir/mult_47/U46/CO (FA_X1)                     0.09       2.24 f
+  myfilter_iir/mult_47/U45/CO (FA_X1)                     0.09       2.33 f
+  myfilter_iir/mult_47/U44/CO (FA_X1)                     0.09       2.42 f
+  myfilter_iir/mult_47/U43/CO (FA_X1)                     0.09       2.51 f
+  myfilter_iir/mult_47/U42/CO (FA_X1)                     0.09       2.60 f
+  myfilter_iir/mult_47/U41/CO (FA_X1)                     0.09       2.69 f
+  myfilter_iir/mult_47/U40/CO (FA_X1)                     0.09       2.78 f
+  myfilter_iir/mult_47/U39/CO (FA_X1)                     0.09       2.87 f
+  myfilter_iir/mult_47/U38/CO (FA_X1)                     0.09       2.96 f
+  myfilter_iir/mult_47/U37/CO (FA_X1)                     0.09       3.05 f
+  myfilter_iir/mult_47/U36/CO (FA_X1)                     0.09       3.14 f
+  myfilter_iir/mult_47/U35/CO (FA_X1)                     0.09       3.23 f
+  myfilter_iir/mult_47/U34/CO (FA_X1)                     0.09       3.32 f
+  myfilter_iir/mult_47/U33/CO (FA_X1)                     0.09       3.41 f
+  myfilter_iir/mult_47/U32/S (FA_X1)                      0.14       3.55 r
+  myfilter_iir/mult_47/product[27] (iir_DW_mult_tc_0)     0.00       3.55 r
+  myfilter_iir/sub_48/B[14] (iir_DW01_sub_0)              0.00       3.55 r
+  myfilter_iir/sub_48/U19/ZN (INV_X1)                     0.02       3.57 f
+  myfilter_iir/sub_48/U22/ZN (OAI21_X1)                   0.04       3.62 r
+  myfilter_iir/sub_48/U21/ZN (OAI21_X1)                   0.04       3.65 f
+  myfilter_iir/sub_48/U2_15/S (FA_X1)                     0.18       3.83 r
+  myfilter_iir/sub_48/DIFF[15] (iir_DW01_sub_0)           0.00       3.83 r
+  myfilter_iir/mult_49/a[14] (iir_DW_mult_tc_1)           0.00       3.83 r
+  myfilter_iir/mult_49/U534/ZN (XNOR2_X1)                 0.09       3.92 r
+  myfilter_iir/mult_49/U530/ZN (OAI22_X1)                 0.05       3.96 f
+  myfilter_iir/mult_49/U106/S (FA_X1)                     0.14       4.10 r
+  myfilter_iir/mult_49/U103/S (FA_X1)                     0.12       4.22 f
+  myfilter_iir/mult_49/U102/S (FA_X1)                     0.14       4.36 r
+  myfilter_iir/mult_49/U45/S (FA_X1)                      0.12       4.48 f
+  myfilter_iir/mult_49/product[14] (iir_DW_mult_tc_1)     0.00       4.48 f
+  myfilter_iir/add_51/A[1] (iir_DW01_add_0)               0.00       4.48 f
+  myfilter_iir/add_51/U1_1/CO (FA_X1)                     0.10       4.58 f
+  myfilter_iir/add_51/U1_2/CO (FA_X1)                     0.09       4.67 f
+  myfilter_iir/add_51/U1_3/CO (FA_X1)                     0.09       4.76 f
+  myfilter_iir/add_51/U1_4/CO (FA_X1)                     0.09       4.85 f
+  myfilter_iir/add_51/U1_5/CO (FA_X1)                     0.09       4.94 f
+  myfilter_iir/add_51/U1_6/CO (FA_X1)                     0.09       5.03 f
+  myfilter_iir/add_51/U1_7/CO (FA_X1)                     0.09       5.12 f
+  myfilter_iir/add_51/U1_8/CO (FA_X1)                     0.09       5.21 f
+  myfilter_iir/add_51/U1_9/CO (FA_X1)                     0.09       5.30 f
+  myfilter_iir/add_51/U1_10/CO (FA_X1)                    0.09       5.39 f
+  myfilter_iir/add_51/U1_11/CO (FA_X1)                    0.09       5.49 f
+  myfilter_iir/add_51/U1_12/CO (FA_X1)                    0.09       5.57 f
+  myfilter_iir/add_51/U9/ZN (OAI21_X1)                    0.03       5.61 r
+  myfilter_iir/add_51/U1/ZN (INV_X1)                      0.02       5.63 f
+  myfilter_iir/add_51/U8/ZN (AOI21_X1)                    0.06       5.69 r
+  myfilter_iir/add_51/U4/ZN (INV_X1)                      0.02       5.72 f
+  myfilter_iir/add_51/U7/ZN (OAI21_X1)                    0.04       5.76 r
+  myfilter_iir/add_51/U6/ZN (OAI21_X1)                    0.04       5.80 f
+  myfilter_iir/add_51/U1_15/S (FA_X1)                     0.13       5.93 r
+  myfilter_iir/add_51/SUM[15] (iir_DW01_add_0)            0.00       5.93 r
+  myfilter_iir/DOUT[13] (iir)                             0.00       5.93 r
+  output_reg/D[13] (REG_nbit14_0)                         0.00       5.93 r
+  output_reg/regx_13/D (FFD_0)                            0.00       5.93 r
+  output_reg/regx_13/Q_reg/D (DFFR_X1)                    0.01       5.93 r
+  data arrival time                                                  5.93
+
+  clock MY_CLK (rise edge)                               12.30      12.30
+  clock network delay (ideal)                             0.00      12.30
+  clock uncertainty                                      -0.07      12.23
+  output_reg/regx_13/Q_reg/CK (DFFR_X1)                   0.00      12.23 r
+  library setup time                                     -0.03      12.20
+  data required time                                                12.20
+  --------------------------------------------------------------------------
+  data required time                                                12.20
+  data arrival time                                                 -5.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.26
+
+
+1

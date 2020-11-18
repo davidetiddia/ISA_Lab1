@@ -1,0 +1,21 @@
+#----------------------------------------------------------
+# ./.snaprc_screenshot : snapshot resource file                          
+# label = screenshot                                      
+#----------------------------------------------------------
+set tmpstr ""
+set tmpbar ""
+lappend tmpstr "dir" $sdir
+lappend tmpstr "label" screenshot
+lappend tmpstr "fplan" $sdir/ss_screenshot.fplan.gif
+lappend tmpstr "amoeba" $sdir/ss_screenshot.amoeba.gif
+lappend tmpstr "place" $sdir/ss_screenshot.place.gif
+lappend tmpstr "trgGlbOverflowPctH" 0
+lappend tmpstr "trgGlbOverflowPctV" 0
+lappend tmpbar "Congestion"
+lappend tmpstr "Congestion" 0
+lappend tmpbar WNS
+lappend tmpstr WNS 18.44
+lappend tmpbar TNS
+lappend tmpstr TNS 0.0
+lappend tmpbar Overlap
+lappend tmpstr Overlap 0

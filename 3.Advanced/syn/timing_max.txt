@@ -1,0 +1,192 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : filter
+Version: O-2018.06-SP4
+Date   : Mon Nov 16 19:28:49 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: a1[1] (input port clocked by MY_CLK)
+  Endpoint: output_reg/regx_13/Q_reg
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  filter             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 r
+  a1[1] (in)                                              0.00       0.50 r
+  myfilter_iir/a1[1] (iir)                                0.00       0.50 r
+  myfilter_iir/r349/b[1] (iir_DW_mult_tc_2)               0.00       0.50 r
+  myfilter_iir/r349/U664/ZN (XNOR2_X1)                    0.07       0.57 r
+  myfilter_iir/r349/U593/Z (BUF_X1)                       0.05       0.62 r
+  myfilter_iir/r349/U759/ZN (NOR2_X1)                     0.03       0.65 f
+  myfilter_iir/r349/U602/ZN (NAND2_X1)                    0.03       0.68 r
+  myfilter_iir/r349/U603/ZN (NAND3_X1)                    0.04       0.72 f
+  myfilter_iir/r349/U56/CO (FA_X1)                        0.11       0.84 f
+  myfilter_iir/r349/U462/ZN (NAND2_X1)                    0.03       0.87 r
+  myfilter_iir/r349/U464/ZN (NAND3_X1)                    0.05       0.92 f
+  myfilter_iir/r349/U643/ZN (NAND2_X1)                    0.04       0.95 r
+  myfilter_iir/r349/U646/ZN (NAND3_X1)                    0.05       1.00 f
+  myfilter_iir/r349/U468/ZN (NAND2_X1)                    0.04       1.03 r
+  myfilter_iir/r349/U470/ZN (NAND3_X1)                    0.05       1.08 f
+  myfilter_iir/r349/U707/ZN (NAND2_X1)                    0.05       1.13 r
+  myfilter_iir/r349/U650/ZN (NAND3_X1)                    0.04       1.16 f
+  myfilter_iir/r349/U711/ZN (NAND2_X1)                    0.03       1.19 r
+  myfilter_iir/r349/U713/ZN (NAND3_X1)                    0.05       1.24 f
+  myfilter_iir/r349/U474/ZN (NAND2_X1)                    0.04       1.27 r
+  myfilter_iir/r349/U476/ZN (NAND3_X1)                    0.05       1.32 f
+  myfilter_iir/r349/U632/ZN (NAND2_X1)                    0.05       1.37 r
+  myfilter_iir/r349/U541/ZN (NAND3_X1)                    0.04       1.41 f
+  myfilter_iir/r349/U487/ZN (XNOR2_X1)                    0.04       1.45 r
+  myfilter_iir/r349/U452/Z (BUF_X1)                       0.08       1.53 r
+  myfilter_iir/r349/product[11] (iir_DW_mult_tc_2)        0.00       1.53 r
+  myfilter_iir/mult_65_2/a[11] (iir_DW_mult_tc_5)         0.00       1.53 r
+  myfilter_iir/mult_65_2/U889/ZN (XNOR2_X1)               0.08       1.61 r
+  myfilter_iir/mult_65_2/U895/ZN (OAI22_X1)               0.03       1.64 f
+  myfilter_iir/mult_65_2/U1368/ZN (NAND2_X1)              0.03       1.67 r
+  myfilter_iir/mult_65_2/U1371/ZN (NAND3_X1)              0.04       1.72 f
+  myfilter_iir/mult_65_2/U802/ZN (NAND2_X1)               0.04       1.75 r
+  myfilter_iir/mult_65_2/U804/ZN (NAND3_X1)               0.05       1.80 f
+  myfilter_iir/mult_65_2/U1097/ZN (XNOR2_X1)              0.06       1.87 f
+  myfilter_iir/mult_65_2/U1096/ZN (XNOR2_X1)              0.06       1.92 f
+  myfilter_iir/mult_65_2/U220/S (FA_X1)                   0.13       2.06 r
+  myfilter_iir/mult_65_2/U1434/ZN (INV_X1)                0.02       2.08 f
+  myfilter_iir/mult_65_2/U1563/ZN (OAI222_X1)             0.07       2.15 r
+  myfilter_iir/mult_65_2/U1250/ZN (NAND2_X1)              0.04       2.19 f
+  myfilter_iir/mult_65_2/U1140/ZN (AND3_X1)               0.05       2.23 f
+  myfilter_iir/mult_65_2/U1562/ZN (OAI222_X1)             0.06       2.30 r
+  myfilter_iir/mult_65_2/U1037/ZN (NAND2_X1)              0.03       2.33 f
+  myfilter_iir/mult_65_2/U1039/ZN (AND3_X1)               0.04       2.37 f
+  myfilter_iir/mult_65_2/U1187/ZN (OR2_X1)                0.06       2.43 f
+  myfilter_iir/mult_65_2/U1188/ZN (NAND3_X1)              0.03       2.46 r
+  myfilter_iir/mult_65_2/U1041/ZN (NAND2_X1)              0.02       2.49 f
+  myfilter_iir/mult_65_2/U767/ZN (AND3_X1)                0.04       2.53 f
+  myfilter_iir/mult_65_2/U1183/ZN (OR2_X1)                0.06       2.58 f
+  myfilter_iir/mult_65_2/U1185/ZN (NAND3_X1)              0.03       2.62 r
+  myfilter_iir/mult_65_2/U1229/ZN (NAND2_X1)              0.03       2.64 f
+  myfilter_iir/mult_65_2/U879/ZN (AND3_X1)                0.04       2.69 f
+  myfilter_iir/mult_65_2/U1226/ZN (OR2_X1)                0.05       2.74 f
+  myfilter_iir/mult_65_2/U1227/ZN (NAND3_X1)              0.03       2.77 r
+  myfilter_iir/mult_65_2/U1034/ZN (NAND2_X1)              0.03       2.80 f
+  myfilter_iir/mult_65_2/U999/ZN (AND3_X1)                0.04       2.84 f
+  myfilter_iir/mult_65_2/U1561/ZN (OAI222_X1)             0.06       2.90 r
+  myfilter_iir/mult_65_2/U1254/ZN (NAND2_X1)              0.03       2.94 f
+  myfilter_iir/mult_65_2/U824/ZN (AND3_X2)                0.05       2.98 f
+  myfilter_iir/mult_65_2/U1560/ZN (OAI222_X1)             0.06       3.04 r
+  myfilter_iir/mult_65_2/U61/CO (FA_X1)                   0.09       3.14 r
+  myfilter_iir/mult_65_2/U1388/ZN (NAND2_X1)              0.04       3.17 f
+  myfilter_iir/mult_65_2/U1391/ZN (NAND3_X1)              0.04       3.21 r
+  myfilter_iir/mult_65_2/U1232/ZN (NAND2_X1)              0.03       3.24 f
+  myfilter_iir/mult_65_2/U1234/ZN (NAND3_X1)              0.03       3.27 r
+  myfilter_iir/mult_65_2/U58/S (FA_X1)                    0.12       3.39 f
+  myfilter_iir/mult_65_2/product[29] (iir_DW_mult_tc_5)
+                                                          0.00       3.39 f
+  myfilter_iir/add_69/B[3] (iir_DW01_add_0)               0.00       3.39 f
+  myfilter_iir/add_69/U71/ZN (NAND2_X1)                   0.04       3.44 r
+  myfilter_iir/add_69/U74/ZN (NAND3_X1)                   0.04       3.47 f
+  myfilter_iir/add_69/U53/ZN (NAND2_X1)                   0.03       3.50 r
+  myfilter_iir/add_69/U55/ZN (NAND3_X1)                   0.05       3.55 f
+  myfilter_iir/add_69/U11/ZN (NAND2_X1)                   0.04       3.58 r
+  myfilter_iir/add_69/U13/ZN (NAND3_X1)                   0.05       3.63 f
+  myfilter_iir/add_69/U83/ZN (NAND2_X1)                   0.04       3.67 r
+  myfilter_iir/add_69/U85/ZN (NAND3_X1)                   0.05       3.71 f
+  myfilter_iir/add_69/U5/ZN (NAND2_X1)                    0.04       3.75 r
+  myfilter_iir/add_69/U7/ZN (NAND3_X1)                    0.04       3.79 f
+  myfilter_iir/add_69/U45/ZN (NAND2_X1)                   0.03       3.83 r
+  myfilter_iir/add_69/U47/ZN (NAND3_X1)                   0.04       3.86 f
+  myfilter_iir/add_69/U1_9/S (FA_X1)                      0.18       4.04 r
+  myfilter_iir/add_69/SUM[9] (iir_DW01_add_0)             0.00       4.04 r
+  myfilter_iir/mult_70/a[9] (iir_DW_mult_tc_6)            0.00       4.04 r
+  myfilter_iir/mult_70/U814/Z (XOR2_X1)                   0.09       4.13 r
+  myfilter_iir/mult_70/U812/ZN (OAI22_X1)                 0.04       4.17 f
+  myfilter_iir/mult_70/U129/S (FA_X1)                     0.15       4.33 r
+  myfilter_iir/mult_70/U128/S (FA_X1)                     0.11       4.44 f
+  myfilter_iir/mult_70/U633/ZN (INV_X1)                   0.03       4.47 r
+  myfilter_iir/mult_70/U634/ZN (OAI222_X1)                0.06       4.53 f
+  myfilter_iir/mult_70/U717/ZN (NAND2_X1)                 0.04       4.57 r
+  myfilter_iir/mult_70/U540/ZN (AND3_X1)                  0.05       4.62 r
+  myfilter_iir/mult_70/U719/ZN (OAI222_X1)                0.04       4.66 f
+  myfilter_iir/mult_70/U608/ZN (INV_X1)                   0.03       4.70 r
+  myfilter_iir/mult_70/U613/ZN (OAI222_X1)                0.06       4.76 f
+  myfilter_iir/mult_70/U479/ZN (NAND2_X1)                 0.04       4.79 r
+  myfilter_iir/mult_70/U481/ZN (NAND3_X1)                 0.04       4.84 f
+  myfilter_iir/mult_70/U623/ZN (NAND2_X1)                 0.04       4.88 r
+  myfilter_iir/mult_70/U625/ZN (NAND3_X1)                 0.04       4.92 f
+  myfilter_iir/mult_70/U766/ZN (NAND2_X1)                 0.04       4.96 r
+  myfilter_iir/mult_70/U769/ZN (NAND3_X1)                 0.04       4.99 f
+  myfilter_iir/mult_70/U641/ZN (NAND2_X1)                 0.03       5.03 r
+  myfilter_iir/mult_70/U639/ZN (NAND3_X1)                 0.04       5.07 f
+  myfilter_iir/mult_70/U685/ZN (NAND2_X1)                 0.04       5.11 r
+  myfilter_iir/mult_70/U531/ZN (NAND3_X1)                 0.04       5.15 f
+  myfilter_iir/mult_70/U635/ZN (NAND2_X1)                 0.04       5.19 r
+  myfilter_iir/mult_70/U521/ZN (NAND3_X1)                 0.04       5.23 f
+  myfilter_iir/mult_70/U722/ZN (NAND2_X1)                 0.04       5.26 r
+  myfilter_iir/mult_70/U724/ZN (NAND3_X1)                 0.04       5.30 f
+  myfilter_iir/mult_70/U666/ZN (NAND2_X1)                 0.04       5.34 r
+  myfilter_iir/mult_70/U668/ZN (NAND3_X1)                 0.04       5.38 f
+  myfilter_iir/mult_70/U676/ZN (NAND2_X1)                 0.04       5.42 r
+  myfilter_iir/mult_70/U678/ZN (NAND3_X1)                 0.04       5.46 f
+  myfilter_iir/mult_70/U669/ZN (NAND2_X1)                 0.04       5.49 r
+  myfilter_iir/mult_70/U534/ZN (NAND3_X1)                 0.04       5.53 f
+  myfilter_iir/mult_70/U658/ZN (NAND2_X1)                 0.04       5.57 r
+  myfilter_iir/mult_70/U660/ZN (NAND3_X1)                 0.04       5.61 f
+  myfilter_iir/mult_70/U681/ZN (NAND2_X1)                 0.04       5.64 r
+  myfilter_iir/mult_70/U684/ZN (NAND3_X1)                 0.04       5.68 f
+  myfilter_iir/mult_70/U649/ZN (NAND2_X1)                 0.04       5.72 r
+  myfilter_iir/mult_70/U538/ZN (NAND3_X1)                 0.04       5.76 f
+  myfilter_iir/mult_70/U644/ZN (XNOR2_X1)                 0.06       5.82 f
+  myfilter_iir/mult_70/product[26] (iir_DW_mult_tc_6)     0.00       5.82 f
+  myfilter_iir/add_0_root_add_0_root_add_71/B[13] (iir_DW01_add_1)
+                                                          0.00       5.82 f
+  myfilter_iir/add_0_root_add_0_root_add_71/U5/ZN (OR2_X1)
+                                                          0.06       5.88 f
+  myfilter_iir/add_0_root_add_0_root_add_71/U6/ZN (NAND2_X1)
+                                                          0.03       5.91 r
+  myfilter_iir/add_0_root_add_0_root_add_71/U4/ZN (NAND2_X1)
+                                                          0.03       5.94 f
+  myfilter_iir/add_0_root_add_0_root_add_71/U18/ZN (INV_X1)
+                                                          0.02       5.96 r
+  myfilter_iir/add_0_root_add_0_root_add_71/U2/ZN (AND2_X1)
+                                                          0.04       6.00 r
+  myfilter_iir/add_0_root_add_0_root_add_71/U13/ZN (OAI221_X1)
+                                                          0.04       6.04 f
+  myfilter_iir/add_0_root_add_0_root_add_71/U114/ZN (AOI22_X1)
+                                                          0.06       6.10 r
+  myfilter_iir/add_0_root_add_0_root_add_71/U72/ZN (XNOR2_X1)
+                                                          0.06       6.16 r
+  myfilter_iir/add_0_root_add_0_root_add_71/SUM[16] (iir_DW01_add_1)
+                                                          0.00       6.16 r
+  myfilter_iir/DOUT[13] (iir)                             0.00       6.16 r
+  output_reg/D[13] (REG_nbit14_1)                         0.00       6.16 r
+  output_reg/regx_13/D (FFD_1)                            0.00       6.16 r
+  output_reg/regx_13/Q_reg/D (DFFR_X1)                    0.01       6.17 r
+  data arrival time                                                  6.17
+
+  clock MY_CLK (rise edge)                                6.28       6.28
+  clock network delay (ideal)                             0.00       6.28
+  clock uncertainty                                      -0.07       6.21
+  output_reg/regx_13/Q_reg/CK (DFFR_X1)                   0.00       6.21 r
+  library setup time                                     -0.04       6.17
+  data required time                                                 6.17
+  --------------------------------------------------------------------------
+  data required time                                                 6.17
+  data arrival time                                                 -6.17
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
